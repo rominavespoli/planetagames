@@ -1,60 +1,63 @@
-let seleccion = parseInt(
-  prompt(
-    "Seleccione una de las siguientes opciones para elegir un juego de mesa: \n 1- Según edad \n  2- Según categorias de juegos"
-  )
-);
+import Cart from "./Cart.js";
+import Product from "./product.js"
 
-switch (seleccion) {
-  case 1:
-    function ageFilter() {
-      let edad = parseInt(prompt("ingrese su edad"));
+let products = [];
+let cart = new Cart([])
 
-      if (edad <= 10) {
-        alert("No contamos con juegos para la edad ingresada");
-      } else if (edad > 10 && edad < 30) {
-        alert("Encontrarás juegos en la seccion A");
-      } else if (edad > 30 && edad < 50) {
-        alert("Encontrarás juegos en la seccion B");
-      } else if (edad > 50 && edad < 90) {
-        alert("Encontrarás juegos en la seccion C");
-      } else {
-        alert("Opción inválida");
-      }
-    }
-    ageFilter();
-    break;
-  case 2:
-    function categoryFilter() {
-      let opcion = parseInt(
-        prompt(
-          " 1- Juegos didácticos  \n 2- Juegos de ingenio \n 3- Juegos de estrategia \n 4- Juegos cooperativos \n 5- Juegos de roles \n Ingrese una opción"
-        )
-      );
 
-      switch (opcion) {
-        case 1:
-          alert("Ingresando a los juegos didácticos");
-          break;
-        case 2:
-          alert("Ingresando a los juegos de ingenio");
-          break;
-        case 3:
-          alert("Ingresando a los juegos de estrategia");
-          break;
-        case 4:
-          alert("Ingresando a los juegos cooperativos");
-          break;
-        case 5:
-          alert("Ingresando a los juegos de roles");
-          break;
-        default:
-          alert("opción inválida");
-          break;
-      }
-    }
-    categoryFilter();
-    break;
-  default:
-    alert("opción incorrecta");
-    break;
+const contentProd = document.querySelector("#contentProd");
+let botonesAdd = document.querySelectorAll(".btnAdd")
+console.log(botonesAdd);
+console.log(contentProd);
+createProductsAndLocalStorage();
+showProducts();
+actualizarBotonesAdd();
+
+function actualizarBotonesAdd() {
+    let botonesAdd = document.querySelectorAll(".btnAdd");
+    botonesAdd.forEach(button => {
+        button.addEventListener("click", myFunc);
+        button.romi = 'This is my parameter';
+    })
 }
+
+function createProductsAndLocalStorage() {
+    products.push(new Product ("Alien", 2000, "juegos de ingenio", 20, "./images/alien-el-octavo-pasajero-el-destino-del-nostromo.jpg", "prod0"))
+    products.push(new Product ("Azul", 3500, "juegos de ingenio", 20, "./images/azul-master-chocolatier.jpg", "prod1"))
+    products.push(new Product ("Bloodhorne ", 4900, "juegos didácticos", 10, "./images/bloodborne-la-mazmorra-del-caliz.jpg", "prod2"))
+    products.push(new Product ("Challengers", 2650, "juegos de estrategia", 20, "./images/challengers.jpg", "prod3"))
+    products.push(new Product ("Downfall of empires", 7000, "juegos de estrategia", 20, "./images/downfall-of-empires.jpg", "prod4"))
+    products.push(new Product ("El señor de los anillos", 7800, "juegos de estrategia", 20, "./images/el señor de los anillos.jpeg", "prod5"))
+    localStorage.setItem("products", JSON.stringify(products));
+}
+
+function showProducts(){
+    
+    products.forEach(product => {
+    const div = document.createElement("div");
+    div.classList.add("product");
+    div.innerHTML = `
+        <img class="prodImg" src="${product.image}">
+        <div>
+            <h3 class="prodName">${product.name}</h3>
+            <p class="prodPrice">$${product.price}</p>
+            <button class="btnAdd" id="${product.item}">Agregar al carrito</button>
+        </div>
+` ;
+        contentProd.append(div);
+    })
+}
+
+function agregarCarrito(lala) {
+
+console.log(lala)
+}
+
+function myFunc(evt)
+{
+  console.log(evt);
+}
+
+
+
+

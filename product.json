@@ -1,0 +1,10 @@
+[
+    {"name":"Clank","price":20,"category":"juegos de ingenio","age":20},
+    {"name":"Wingspan","price":20,"category":"juegos de ingenio","age":20},
+    {"name":"Monster kit ","price":20,"category":"juegos didácticos","age":10},
+    {"name":"Everdell","price":20,"category":"juegos de estrategia","age":20},
+    {"name":"Eclipse","price":20,"category":"juegos de estrategia","age":20}
+
+]
+
+// guardar en locarl storage
