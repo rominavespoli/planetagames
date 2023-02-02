@@ -1,10 +1,12 @@
+import CartProduct from "./CartProduct.js";
+
 class Cart {
   constructor(arrayCartProducts) {
     this.arrayCartProducts = arrayCartProducts;
   }
 
   addProduct(product) {
-    let cartProduct = new CartProduct(product, 1);//todo: falta el if para chequear si el product esta o no en el carrito
+    let cartProduct = new CartProduct(product, 1); 
     this.arrayCartProducts.push(cartProduct);
   }
 
@@ -36,8 +38,4 @@ class Cart {
   }
 }
 
-
-
-
-
-export default Cart
+export default Cart;

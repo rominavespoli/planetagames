@@ -1,5 +1,4 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ultra&display=swap");
 
 * {
   margin: 0;
@@ -11,8 +10,8 @@
   color: white;
   font-size: 50px;
 }
-.navbar-brand{
-  font-family: 'Ultra', serif;
+.navbar-brand {
+  font-family: "Ultra", serif;
   font-size: 30px;
 }
 footer {
@@ -24,23 +23,27 @@ footer {
 .mainMenu li {
   font-size: 40px;
 }
-h3{
+h3 {
   text-align: center;
 }
-p{
+p {
   text-align: center;
 }
-.btnAdd{
-  background-color: blue ;
+.btnAdd {
+  background-color: blue;
   color: white;
 }
-.btnCarrito{
-  background-color: transparent;
-}
-.prodName{
+
+.prodName {
   font-size: 20px;
   color: black;
 }
-.prodImg{
+.prodImg {
   width: 150px;
+}
+#contentProd {
+  height: 550px;
+}
+.nuevoProducto {
+  padding: 30px;
 }
