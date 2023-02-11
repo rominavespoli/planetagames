@@ -6,7 +6,7 @@ import {updateCartCounter} from './carrito2.js'
 
 let products = [];
 let cartProducts;
-const categoryButtons = document.querySelectorAll(".botonMenu");
+const categoryButtons = document.querySelectorAll(".menuButton");
 const contentProd = document.querySelector("#contentProd");
 
 fetchProducts();
@@ -107,9 +107,8 @@ function addCartProduct(evt) {
     product.quantity = 1;
     cartProducts.push(product);
   }
-   //actualizarcontadorCarrito();
+  
    updateCartCounter(cartProducts, document.querySelector("#contadorCarrito"));
    loadCardModalExp(cartProducts);
   localStorage.setItem("productos-en-carrito", JSON.stringify(cartProducts));
 }
- 

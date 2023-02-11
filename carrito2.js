@@ -2,8 +2,6 @@ export function loadCardModalExp(cartProducts) {
     const modalBody = document.querySelector(".modal .modal-body")
       modalBody.innerHTML = ""
       cartProducts.forEach((product) => {
-        //modalBody.className = "productoEnCarrito";
-        //modalBody.classList.add("carrito-producto");
         modalBody.innerHTML += `
         <div class="modal-contenedor">
         
@@ -60,7 +58,6 @@ export function loadCardModalExp(cartProducts) {
             confirmButtonColor: '#3085d6',
             cancelButtonColor: '#d33',
             confirmButtonText: 'Si',
-            denyButtonText: 'No', /* NO SE MUESTRA*/ 
             }).then((result) => {
             if (result.isConfirmed) {
                 Swal.fire({

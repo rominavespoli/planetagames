@@ -1,5 +1,3 @@
-
-
 class Product {
   constructor(name, price, category, age, image, id) {
     this.name = name;
