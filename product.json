@@ -1,9 +1,27 @@
 [
-    {"name":"Clank","price":20,"category":"juegos de ingenio","age":20},
-    {"name":"Wingspan","price":20,"category":"juegos de ingenio","age":20},
-    {"name":"Monster kit ","price":20,"category":"juegos didácticos","age":10},
-    {"name":"Everdell","price":20,"category":"juegos de estrategia","age":20},
-    {"name":"Eclipse","price":20,"category":"juegos de estrategia","age":20}
+    {"name":"Alien","price":2000,"category":"juegos de ingenio","age":20,"image":"./images/alien-el-octavo-pasajero-el-destino-del-nostromo.jpg","id":"prod0"},
+ {"name":"Azul","price":3500,"category":"juegos de ingenio","age":20,"image":"./images/azul-master-chocolatier.jpg","id":"prod1"},
+ {"name":"Bloodhorne ","price":4900,"category":"juegos didácticos","age":10,"image":"./images/bloodborne-la-mazmorra-del-caliz.jpg","id":"prod2"},
+ {"name":"Challengers","price":2650,"category":"juegos cooperativos","age":20,"image":"./images/challengers.jpg","id":"prod3"},
+ {"name":"Flamecraft","price":7800,"category":"juegos de ingenio","age":20,"image":"./images/flamecraft.jpg","id":"prod6"},
+ {"name":"Hostage","price":7800,"category":"juegos cooperativos","age":20,"image":"./images/hostage-negotiator-oleada-de-crimenes.jpg","id":"prod7"},
+ {"name":"Imperium","price":7800,"category":"juegos de estrategia","age":20,"image":"./images/imperium-legendarios.jpg","id":"prod8"},
+ {"name":"La era olvidada","price":7800,"category":"juegos de rol","age":20,"image":"./images/la-era-olvidada-expansion-de-campana-arkham-horror.jpg","id":"prod9"},
+ {"name":"Marvel","price":7800,"category":"juegos de rol","age":20,"image":"./images/marvel-united-x-men.jpg","id":"prod10"},
+ {"name":"Mindbug","price":7800,"category":"juegos didácticos","age":20,"image":"./images/mindbug.jpg","id":"prod11"},
+ {"name":"Rome and roll","price":7800,"category":"juegos de ingenio","age":20,"image":"./images/rome-roll-personajes-2-expansion.jpg","id":"prod12"},
+ {"name":"Shards of infinity","price":7800,"category":"juegos cooperativos","age":20,"image":"./images/shards-of-infinity-expansion-relics-of-the-future.jpg","id":"prod13"},
+ {"name":"Skyhawk","price":7800,"category":"juegos de estrategia","age":20,"image":"./images/skyhawk-rolling-thunder-1966.jpg","id":"prod14"},
+ {"name":"Sleeping gods","price":7800,"category":"juegos didácticos","age":20,"image":"./images/sleeping-gods-mazmorras.jpg","id":"prod15"},
+ {"name":"Swords","price":7800,"category":"juegos de ingenio","age":20,"image":"./images/sword-and-sorcery-cronicas-antiguas.jpg","id":"prod16"},
+ {"name":"Terraforming","price":7800,"category":"juegos de estrategia","age":20,"image":"./images/terraforming-mars.jpeg","id":"prod17"},
+ {"name":"Tiletum","price":7800,"category":"juegos de estrategia","age":20,"image":"./images/tiletum.jpg","id":"prod18"},
+ {"name":"Boogeyman","price":7800,"category":"juegos de rol","age":20,"image":"./images/boogeyman.jpg","id":"prod19"},
+ {"name":"Dreamquest","price":7800,"category":"juegos cooperativos","age":20,"image":"./images/dreamquest.jpg","id":"prod20"},
+ {"name":"Cloudage","price":7800,"category":"juegos de estrategia","age":20,"image":"./images/cloudage.jpg","id":"prod21"},
+ {"name":"La era olvidada 2","price":7800,"category":"juegos didácticos","age":20,"image":"./images/la-era-olvidada-expansion-investigadores-arkham-horror.jpg","id":"prod22"},
+ {"name":"Origins expansion","price":7800,"category":"juegos de estrategia","age":20,"image":"./images/origins-expansion-maravillas-antiguas.jpg","id":"prod23"}
 
+    
 ]
 
