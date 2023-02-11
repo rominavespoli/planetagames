@@ -108,7 +108,7 @@ function addCartProduct(evt) {
     cartProducts.push(product);
   }
   
-   updateCartCounter(cartProducts, document.querySelector("#contadorCarrito"));
-   loadCardModalExp(cartProducts);
+  updateCartCounter(cartProducts, document.querySelector("#contadorCarrito"));
+  loadCardModalExp(cartProducts);
   localStorage.setItem("productos-en-carrito", JSON.stringify(cartProducts));
 }
